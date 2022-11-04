@@ -47,7 +47,7 @@ void loop()
   a_value = analogRead(PIN_POTENTIOMETER);
   // Read IR Sensor value !!!
   // Convert IR sensor value into distance !!!
-  dist = (6762.0/(a_value-9)-4.0)*10.0 - 6.0;
+  dist = (6762.0/(a_value-9)-4.0)*10.0 - 60.0;
   // we need distance range filter here !!!
   if (dist < _DIST_MIN) {
     dist = dist_prev;           // cut lower than minimum
